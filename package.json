@@ -1,0 +1,26 @@
+{
+  "name": "vst-test",
+  "version": "1.0.0",
+  "description": "Testing the Elementary Audio plugin renderer.",
+  "main": "index.js",
+  "scripts": {
+    "serve": "node server.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hisschemoller/vst-test.git"
+  },
+  "author": "Wouter Hisschemoller",
+  "license": "mit",
+  "bugs": {
+    "url": "https://github.com/hisschemoller/vst-test/issues"
+  },
+  "homepage": "https://github.com/hisschemoller/vst-test#readme",
+  "dependencies": {
+    "@elemaudio/plugin-renderer": "^1.0.18"
+  },
+  "devDependencies": {
+    "express": "^4.18.2"
+  }
+}
