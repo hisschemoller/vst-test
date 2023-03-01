@@ -18,7 +18,7 @@ brew install nss
 npm i -g --only=prod https-localhost
 
 # start server
-PORT=3000 HOST=127.0.0.1 serve src
+PORT=3000 HOST=127.0.0.1 serve public
 ```
 
 Then view in browser at https://127.0.0.1:3000/<br>
@@ -26,5 +26,7 @@ Or open in VST host with the ElementaryDevKit VST plugin.
 
 ## Documentation and tutorials
 
+* Elementary
+  * https://www.elementary.audio/
 * Build a native audio plugin with Elementary
   * https://blog.logrocket.com/build-native-audio-plugin-elementary/

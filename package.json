@@ -4,7 +4,7 @@
   "description": "Testing the Elementary Audio plugin renderer.",
   "main": "index.js",
   "scripts": {
-    "serve": "node server.mjs",
+    "build": "npx rollup --config",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +21,8 @@
     "@elemaudio/plugin-renderer": "^1.0.18"
   },
   "devDependencies": {
-    "express": "^4.18.2"
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "rollup": "^3.17.3"
   }
 }
