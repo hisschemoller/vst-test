@@ -1,15 +1,21 @@
-// import { el } from '@elemaudio/core';
-import { el } from '@elemaudio/core';
-import { default as core } from '@elemaudio/plugin-renderer';
+import {el} from '@elemaudio/core';
+import WebRenderer from '@elemaudio/web-renderer';
 
-console.log('core', core);
-
-core.on('load', function() {
-  console.log('load', core);
-  core.render(
-    el.mul(0.3, el.cycle(440)),
-    el.mul(0.3, el.cycle(440)),
-  );
+document.getElementById('start').addEventListener('click', () => {
+  const ctx = new AudioContext();
+  const core = new WebRenderer();
+  
+  core.on('load', function() {
+    core.render(el.cycle(440), el.cycle(441));
+  });
+  
+  (async function main() {
+    let node = await core.initialize(ctx, {
+      numberOfInputs: 0,
+      numberOfOutputs: 1,
+      outputChannelCount: [2],
+    });
+  
+    node.connect(ctx.destination);
+  })();
 });
-
-core.initialize();
