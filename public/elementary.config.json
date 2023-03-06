@@ -1,0 +1,18 @@
+{
+  "displayName": "Test",
+  "company": "Wouter Hisschemöller",
+  "bundleId": "com.mycompany.bigdelay",
+  "version": "1.0.0",
+  "manufacturerCode": "WoHi",
+  "pluginCode": "Test",
+  "numInputChannels": 2,
+  "numOutputChannels": 2,
+  "window": {
+    "width": 753,
+    "height": 373,
+    "showToolbar": true
+  },
+  "parameters": [
+    { "paramId": "mix",     "name": "Mix",      "min": 0.0, "max": 1.0, "defaultValue": 1.0 }
+  ]
+}
