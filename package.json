@@ -4,7 +4,6 @@
   "description": "Testing the Elementary Audio plugin renderer.",
   "author": "Wouter Hisschemoller",
   "license": "mit",
-  "main": "index.js",
   "type": "module",
   "scripts": {
     "build": "npx rollup --config"

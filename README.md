@@ -8,7 +8,7 @@ Testing the Elementary Audio plugin renderer.
 # install dependencies
 npm init
 
-# copy dev kit vst plugin, when asked where: /Library/Audio/Plug-Ins
+# copy dev kit vst plugin, when asked where: /Library/Audio/Plug-Ins (some folders needed permission changed)
 npx elem-copy-binaries
 
 # nss/certutils are needed for Firefox and Chrome.
